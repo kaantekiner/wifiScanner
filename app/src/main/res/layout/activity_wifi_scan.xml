@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiScan"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:text="Wifi Scanner"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:textColor="#3399ff"
+        android:id="@+id/infotext0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:text="Kaan Tekiner"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="#a1a1a1"
+        android:id="@+id/infotext02" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"
+        android:gravity="center"
+        android:text="Open source beta version developed by"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="#a1a1a1"
+        android:id="@+id/infotext03" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:gravity="center"
+        android:text="v 1.0"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#a1a1a1"
+        android:id="@+id/infotext01" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/wifi_gray"
+        android:id="@+id/wifiicon"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:text="Checking wifi state"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#a1a1a1"
+        android:id="@+id/infotext1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/circlebackground"
+        android:gravity="center"
+        android:text="Start"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textColor="#3399ff"
+        android:id="@+id/starttext" />
+</RelativeLayout>

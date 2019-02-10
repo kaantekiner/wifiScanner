@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wifiinfo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="28sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/APname" />
+
+            <TextView
+                android:layout_below="@id/APname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="130dp"
+                android:gravity="center"
+                android:text="Access point"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/APnameinfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="240dp"
+                android:gravity="center"
+                android:text="Signal lost, scanning again."
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/signallost"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="240dp"
+                android:gravity="center"
+                android:text="Wifi disabled, please restart app."
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/wifidisabled"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="210dp"
+                android:gravity="center"
+                android:text="- 0 dBm"
+                android:textSize="41sp"
+                android:textStyle="normal"
+                android:textColor="#ff6666"
+                android:id="@+id/dbm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="280dp"
+                android:gravity="center"
+                android:text="% 0"
+                android:textSize="28sp"
+                android:textStyle="normal"
+                android:textColor="#ff6666"
+                android:id="@+id/levelpercent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="340dp"
+                android:gravity="center"
+                android:text="Security"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:textColor="#3399ff"
+                android:id="@+id/bssidbig" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="430dp"
+                android:gravity="center"
+                android:text="Advanced"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/advancedtext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="490dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/bssid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="520dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/frequency" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="550dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/timestamp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="580dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/is80211mcResponder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/isPasspointNetwork" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="640dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/channelWidth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="670dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/centerFreq0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="700dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/centerFreq1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="730dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/operatorFriendlyName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="760dp"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#a1a1a1"
+                android:id="@+id/venueName" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/venueName"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:src="#b5b5b5"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
